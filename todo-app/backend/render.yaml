@@ -1,0 +1,16 @@
+# render.yaml — drop this in your backend folder root
+# Render will auto-detect and use this for deployment
+
+services:
+  - type: web
+    name: taskcloud-backend
+    env: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: MONGODB_URI
+        sync: false   # set manually in Render dashboard
+      - key: FRONTEND_URL
+        sync: false   # set to your Vercel URL
+      - key: NODE_ENV
+        value: production
