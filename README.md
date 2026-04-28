@@ -251,7 +251,3 @@ MongoDB Atlas ──────────────► Task documents
 Each user's tasks are scoped by their Firebase `uid`, ensuring complete data isolation across all users.
 
 ---
-
-## 📄 License
-
-MIT — free to use for portfolio, learning, or production.
